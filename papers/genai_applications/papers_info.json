@@ -1,0 +1,28 @@
+{
+  "2408.05061v1": {
+    "title": "A Jailbroken GenAI Model Can Cause Substantial Harm: GenAI-powered Applications are Vulnerable to PromptWares",
+    "authors": [
+      "Stav Cohen",
+      "Ron Bitton",
+      "Ben Nassi"
+    ],
+    "summary": "In this paper we argue that a jailbroken GenAI model can cause substantial\nharm to GenAI-powered applications and facilitate PromptWare, a new type of\nattack that flips the GenAI model's behavior from serving an application to\nattacking it. PromptWare exploits user inputs to jailbreak a GenAI model to\nforce/perform malicious activity within the context of a GenAI-powered\napplication. First, we introduce a naive implementation of PromptWare that\nbehaves as malware that targets Plan & Execute architectures (a.k.a., ReAct,\nfunction calling). We show that attackers could force a desired execution flow\nby creating a user input that produces desired outputs given that the logic of\nthe GenAI-powered application is known to attackers. We demonstrate the\napplication of a DoS attack that triggers the execution of a GenAI-powered\nassistant to enter an infinite loop that wastes money and computational\nresources on redundant API calls to a GenAI engine, preventing the application\nfrom providing service to a user. Next, we introduce a more sophisticated\nimplementation of PromptWare that we name Advanced PromptWare Threat (APwT)\nthat targets GenAI-powered applications whose logic is unknown to attackers. We\nshow that attackers could create user input that exploits the GenAI engine's\nadvanced AI capabilities to launch a kill chain in inference time consisting of\nsix steps intended to escalate privileges, analyze the application's context,\nidentify valuable assets, reason possible malicious activities, decide on one\nof them, and execute it. We demonstrate the application of APwT against a\nGenAI-powered e-commerce chatbot and show that it can trigger the modification\nof SQL tables, potentially leading to unauthorized discounts on the items sold\nto the user.",
+    "pdf_url": "http://arxiv.org/pdf/2408.05061v1",
+    "published": "2024-08-09"
+  },
+  "2409.09343v1": {
+    "title": "Generative AI in Data Center Networking: Fundamentals, Perspectives, and Case Study",
+    "authors": [
+      "Yinqiu Liu",
+      "Hongyang Du",
+      "Dusit Niyato",
+      "Jiawen Kang",
+      "Zehui Xiong",
+      "Yonggang Wen",
+      "Dong In Kim"
+    ],
+    "summary": "Generative AI (GenAI), exemplified by Large Language Models (LLMs) such as\nOpenAI's ChatGPT, is revolutionizing various fields. Central to this\ntransformation is Data Center Networking (DCN), which not only provides the\ncomputational power necessary for GenAI training and inference but also\ndelivers GenAI-driven services to users. This article examines an interplay\nbetween GenAI and DCNs, highlighting their symbiotic relationship and mutual\nadvancements. We begin by reviewing current challenges within DCNs and discuss\nhow GenAI contributes to enhancing DCN capabilities through innovations, such\nas data augmentation, process automation, and domain transfer. We then focus on\nanalyzing the distinctive characteristics of GenAI workloads on DCNs, gaining\ninsights that catalyze the evolution of DCNs to more effectively support GenAI\nand LLMs. Moreover, to illustrate the seamless integration of GenAI with DCNs,\nwe present a case study on full-lifecycle DCN digital twins. In this study, we\nemploy LLMs equipped with Retrieval Augmented Generation (RAG) to formulate\noptimization problems for DCNs and adopt Diffusion-Deep Reinforcement Learning\n(DRL) for optimizing the RAG knowledge placement strategy. This approach not\nonly demonstrates the application of advanced GenAI methods within DCNs but\nalso positions the digital twin as a pivotal GenAI service operating on DCNs.\nWe anticipate that this article can promote further research into enhancing the\nvirtuous interaction between GenAI and DCNs.",
+    "pdf_url": "http://arxiv.org/pdf/2409.09343v1",
+    "published": "2024-09-14"
+  }
+}
