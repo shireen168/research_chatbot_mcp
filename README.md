@@ -100,6 +100,7 @@ Generates a prompt for AI assistants to find and discuss academic papers on a sp
 ```text
 ├── README.md               # This file
 ├── research_server.py      # Main MCP server implementation
+├── mcp_chatbot.py          # Interactive chatbot interface for the MCP server
 ├── server_config.json      # Configuration for running multiple MCP servers
 ├── pyproject.toml          # Python project dependencies
 ├── papers/                 # Directory where papers are stored by topic
@@ -114,6 +115,29 @@ Generates a prompt for AI assistants to find and discuss academic papers on a sp
 - `mcp`: Model Context Protocol library
 - `nest-asyncio`: For handling async operations
 - `python-dotenv`: For environment variable management
+
+## Chatbot Interface
+
+The project includes an interactive chatbot interface that allows you to interact with the MCP server using natural language.
+
+### Starting the Chatbot
+
+Run the chatbot interface using:
+
+```bash
+python mcp_chatbot.py
+```
+
+### Chatbot Commands
+
+- **Regular queries**: Type any question to interact with the AI assistant
+- **Resource access**: Use `@` commands to access resources
+  - `@folders`: List all available topic folders
+  - `@<topic>`: Get information about papers on a specific topic
+- **Prompts**: Use `/` commands to work with prompts
+  - `/prompts`: List all available prompts
+  - `/prompt <name> <arg1=value1>`: Execute a specific prompt with arguments
+- **Exit**: Type `quit` to exit the chatbot
 
 ## Example Workflow
 
@@ -133,6 +157,13 @@ Generates a prompt for AI assistants to find and discuss academic papers on a sp
 
    ```text
    papers://generative_ai
+   ```
+   
+4. Or use the chatbot interface:
+
+   ```bash
+   python mcp_chatbot.py
+   Query: @generative_ai
    ```
 
 ## License
