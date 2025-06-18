@@ -125,7 +125,7 @@ The project includes an interactive chatbot interface that allows you to interac
 Run the chatbot interface using:
 
 ```bash
-python mcp_chatbot.py
+uv run mcp_chatbot.py
 ```
 
 ### Chatbot Commands
@@ -162,7 +162,7 @@ python mcp_chatbot.py
 4. Or use the chatbot interface:
 
    ```bash
-   python mcp_chatbot.py
+   uv run mcp_chatbot.py
    Query: @generative_ai
    ```
 
